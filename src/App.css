@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
+.container {
+  display: flex;
+  flex: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.downloadResume {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.profileimg{
+  border-radius: 50%;
+}
+.btn {
+  background-color: dodgerblue;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 13px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn:hover {
+  background-color: royalblue;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.backimg {
+  position: absolute
+}
+
+.main {
+  height: 95vh;
+  display: flex;
+  flex: 1;
+  background-color: white;
+  margin-top: 40px;
+  margin-left: 40px;
+  z-index: 1;
+}
+
+.leftSection {
   display: flex;
   flex-direction: column;
+  flex: 0.3;
+}
+
+.imgdiv {
+  display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.contact {
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contactHeading {
+  font-size: medium;
+  padding-left: 5px;
+
+}
+
+.contactNumber {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px;
+}
+
+.number {
+  margin-left: 5px;
+}
+
+.location {
+  margin-left: 5px;
+}
+
+.emailID {
+  margin-left: 5px;
+}
+
+.skillList {
+  display: flex;
+  flex-direction: row;
+}
+
+.unorderedList {
+  font-size: small;
+}
+
+.educationList {
+  font-size: small;
+}
+
+.rightSection {
+  flex: 0.7;
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nameHeading {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.titleName {
+  font-size: xx-large;
+  font-style: oblique;
+}
+
+.profile {
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: medium;
+}
+
+p {
+  text-indent: 30px;
+  font-size: small;
+  word-wrap: break-word;
+}
+
+ul {
+  font-size: small;
 }
